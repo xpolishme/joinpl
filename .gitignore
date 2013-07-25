@@ -1,1 +1,41 @@
-123
+###########################
+##  Automatyczny Config  ##
+##  Pluginu JoinPL v2.3  ##
+##   Stworzonego Przez   ##
+##       xPolishMe       ##
+###########################
+
+
+# Krótkie info:
+
+# %gracz% odpowiada za nick gracza ktory bedzie pojawiac sie przy wiadomosci powitalnej
+# NP. Witaj %gracz% na naszym serwerze! (Witaj xPolishMe na naszym serwerze)
+# Aby uzyc koloru napisz & po czym podaj sciezke koloru np. &4 (czerwony)
+
+
+
+#Nowy gracz wchodzi na serwer i na czacie pojawia sie nizej wymieniona wiadomosc#
+Nowy-Gracz: '&aWitaj &7%gracz% &ana naszym serwerze!'
+
+#To samo co wyzej, lecz pojawia to sie na /broadcast#
+Nowy-GraczBR: '&cWitamy &7%gracz%!'
+
+#Wiadomosc PW (Prywatna wiadomosc) /msg do nowego gracza#
+Nowy-GraczPW: '&6Wiadomosc /msg do nowego gracza, zmieniasz ja w pliku config w folderze JoinPL'
+
+#Gdy gracz wchodzi na serwer na czacie pojawia się ta wiadomosc#
+Wiadomosc-Powitalna: '%gracz% &edolaczyl do rozgrywki'
+
+#Gdy gracz opuszcza gre na czacie pojawia się ta wiadomosc#
+Wiadmosc-Pozegnalna: '%gracz% &eopuscil rozgrywke'
+
+#Informacje na czacie gdy wbije osoba z grupy wyzszej niz gracz#
+Groups:
+  Admin:
+#Informacje gdy wbije/wybije admin są nastepujace
+    Wiadmosc-Powitalna: '%gracz%&b dolaczyl do gry. Uwaga! To admin :D'
+    Wiadmosc-Pozegnalna: '%gracz% &bopuscil gre. Teraz mozesz spokojnie cheatowac :D'
+
+#Pokazywac informacje o randze przy wiadomosci powitalnej (FALSE - NIE) (TRUE - TAK)#
+Przedrostek: false
+SuffixGrup: false
